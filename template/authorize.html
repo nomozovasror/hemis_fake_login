@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="uz-UZ">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEMIS OTM - Avtorizatsiya so&#039;rovi | HEMIS Student axborot tizimi</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+   <link href="https://hemis.tersu.uz/static/assets/5dd0fc5/themes/smoothness/jquery-ui.css?v=1474004875"
+          rel="stylesheet">
+    <link href="https://hemis.tersu.uz/static/assets/1619872/css/bootstrap.css?v=1550073338" rel="stylesheet">
+    <link href="https://hemis.tersu.uz/static/assets/435a53b2/chosen_v1.4.0/chosen.min.css?v=1598517690"
+          rel="stylesheet">
+    <link href="https://hemis.tersu.uz/static/assets/cdbca88/plugins/iCheck/flat/blue.css?v=1567066820"
+          rel="stylesheet">
+    <link href="https://hemis.tersu.uz/static/assets/cdbca88/dist/css/AdminLTE.min.css?v=1567066820" rel="stylesheet">
+    <link href="https://hemis.tersu.uz/static/assets/cdbca88/dist/css/skins/skin-blue.min.css?v=1567066820"
+          rel="stylesheet">
+    <link href="https://hemis.tersu.uz/static/assets/a8b87dc0/src/0.1.4/css/checkBo.min.css?v=1465721329"
+          rel="stylesheet">
+    <link href="https://hemis.tersu.uz/static/assets/73155811/toastr.min.css?v=1439176619" rel="stylesheet">
+    <link href="https://hemis.tersu.uz/static/assets/dd347e36/css/style.css?v=1696625139" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"
+          rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+
+</head>
+
+<body class="hold-transition login-page ">
+    <div class="login-box">
+        <div class="box box-success">
+            <div class="box-header">
+                <h3 class="box-title">Avtorizatsiya so'rovi</h3>
+            </div>
+            <div class="box-body">
+                <p>
+                    <b>armtersu</b> akkauntingizga kirishga ruxsat so‘ramoqda </p>
+            </div>
+            <div class="box-footer">
+                <div class="row text-right">
+                    <div class="col col-xs-4"></div>
+                    <div class="col col-xs-4">
+                        <form action="/oauth/deny" method="post">
+                            <input type="hidden" name="_method" value="delete">
+                            <input type="hidden" name="_csrf-frontend" value="362OOLSGmQQTAyGrP7IMLrGUVPmTD2ZOg5qvvpVzAOqH-O1K7PahblU2GeJG8Edq8Pwtl8o3NXu17MDR8ClXug=="> <input type="hidden" name="state" value="GdgzRyJE0oYJk6s7KZ4MIE832T611w">
+                            <input type="hidden" name="client_id" value="7">
+                            <input type="hidden" name="auth_token" value="CrhiODM286A0cA2o">
+                            <button class="btn btn-default btn-flat btn-block">Rad etish</button>
+                        </form>
+                    </div>
+                    <div class="col col-xs-4">
+                        <form action="/oauth/approve" method="post">
+                            <input type="hidden" name="_csrf-frontend" value="362OOLSGmQQTAyGrP7IMLrGUVPmTD2ZOg5qvvpVzAOqH-O1K7PahblU2GeJG8Edq8Pwtl8o3NXu17MDR8ClXug=="> <input type="hidden" name="state" value="GdgzRyJE0oYJk6s7KZ4MIE832T611w">
+                            <input type="hidden" name="client_id" value="7">
+                            <input type="hidden" name="auth_token" value="CrhiODM286A0cA2o">
+                            <button type="submit" class="btn btn-primary btn-flat btn-block">Ruxsat berish</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
