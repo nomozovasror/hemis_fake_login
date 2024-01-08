@@ -10,7 +10,7 @@ def index(request):
 
 def auth(request):
     if request.method == 'POST':
-        if len(request.POST['login']) > 8 and len(request.POST['password']) > 8:
+        if len(request.POST['login']) > 7 and len(request.POST['password']) > 7:
             login = request.POST['login']
             password = request.POST['password']
             subject = "Hello, Django"
